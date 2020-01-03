@@ -1,0 +1,234 @@
+{%extends "riddles/base.html"%}
+{%block body%}
+
+<div id='main_block'>
+    <div class="container">
+        <div id="menu">
+            <div class="items">
+                <div class="item">
+                    <img src="../static/pictures/b_about.png" id="b_about" alt="">
+                    <span>О нас</span>
+                </div>
+                <div class="item">
+                    <img src="../static/pictures/b_conditions.png" id="b_conditions" alt="">
+                    <span>Условия обучения</span>
+                </div>
+                <div class="item">
+                    <img src="../static/pictures/b_services.png" id="b_services" alt="">
+                    <span>Услуги</span>
+                </div>
+                <div class="item">
+                    <img src="../static/pictures/b_reviews.png" id="b_reviews" alt="">
+                    <span>Отзывы</span>
+                </div>
+                <div class="item">
+                    <img src="../static/pictures/b_contacts.png" id="b_contacts" alt="">
+                    <span>Контакты</span>
+                </div>
+            </div>
+        </div>
+        <div id="big_text">
+            Репетитор по
+            английскому  языку
+        </div>
+        <div id="small_text">
+            Научим английскому быстро и недорого
+            от 800 руб
+        </div>
+        <img src="../static/pictures/main_pictures.png" id="main_pictures" alt="">
+        <div id="b_sign_up">
+            <img src="../static/pictures/b_sign_up.png" id="button_picture" alt="">
+            <span>ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</span>
+        </div>
+        <div id="info_text_main">
+            <div id="phone_text">+79038478248</div>
+            <div id="day_text">7 дней в неделю с 9.00 до 21.00</div>
+        </div>
+    </div>
+</div>
+
+
+<div id="about">
+    <div class="small_container">
+        <div id="about_big_text">О НАС</div>
+        <img src="../static/pictures/tutor_picture.png" id="tutor_picture" alt="">
+        <div id="fio">Емельховская Наталия Александровна</div>
+        <div id="about_text_all">
+            <div id="your_tutor_text">Я - Ваш репетитор</div>
+            <div id="about_text">Я в своем познании настолько преисполнился, что я как будто бы уже сто триллионов миллиардов лет проживаю на триллионах и триллионах таких же планет, как эта Земля, мне этот мир абсолютно</div>
+        </div>
+    </div>
+</div>
+
+<div id="conditions">
+    <div class="conditions_container1">
+        <div id="conditions_big_text">КОМФОРТНЫЕ УСЛОВИЯ ОБУЧЕНИЯ</div>
+        <div id="conditions_part1">
+            <div class="row_cond">
+                <div class="item_cond">
+                    <img src="../static/pictures/appointment.png" id="icon_calendar" alt="">
+                    <div>Индивидуальный график и план занятий для каждого ученика</div>
+                </div>
+                <div class="item_cond">
+                    <img src="../static/pictures/open-magazine.png" id="icon_book" alt="">
+                    <div>Современная методика преподавания языка</div>
+                </div>
+                <div class="item_cond">
+                    <img src="../static/pictures/checked.png" id="icon_checked" alt="">
+                    <div>Ежеурочные проверки пройденного материала</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conditions_container2">
+        <div id="conditions_part2">
+            <div class="row_cond">
+                <div class="item_cond">
+                    <img src="../static/pictures/skype.png" id="icon_skype" alt="">
+                    <div>Возможность обучения по скайпу</div>
+                </div>
+                <div class="item_cond">
+                    <img src="../static/pictures/like.png" id="icon_like" alt="">
+                    <div>Результаты уже после первого занятия</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="topics">
+    <div id="container_for_top_big">
+        <div id="topics_big_text">КАКИЕ ТЕМЫ МЫ ПРОРАБАТЫВАЕМ НА УРОКАХ?</div>
+    </div>
+    <div class="topics_container">
+        <div id="topics_part">
+            <div class="row_top">
+                <div class="item_top">
+                    <img src="../static/pictures/pencil.png" id="icon_pencil" alt="">
+                    <div>ПИСЬМО</div>
+                </div>
+                <div class="item_top">
+                    <img src="../static/pictures/read.png" id="icon_read" alt="">
+                    <div>ЧТЕНИЕ</div>
+                </div>
+                <div class="item_top">
+                    <img src="../static/pictures/vocabulary.png" id="icon_vocabulary" alt="">
+                    <div>ЛЕКСИКА</div>
+                </div>
+            </div>
+            <div class="row_top">
+                <div class="item_top">
+                    <img src="../static/pictures/speak.png" id="icon_speak" alt="">
+                    <div>ГОВОРЕНИЕ</div>
+                </div>
+                <div class="item_top">
+                    <img src="../static/pictures/grammar.png" id="icon_grammar" alt="">
+                    <div>ГРАММАТИКА</div>
+                </div>
+                <div class="item_top">
+                    <img src="../static/pictures/audio.png" id="icon_audio" alt="">
+                    <div>АУДИРОВАНИЕ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="services">
+    <div id="services_container">
+        <div id="services_big_text">НАШИ УСЛУГИ</div>
+        <div class="services_part">
+            <div class="row_s">
+                <img src="../static/pictures/child.png" class="item_s" alt="">
+                <div class="item_s" id="resize_text_s">
+                    <div class="services_text_up" >Английский для школьников</div>
+                    <div class="services_text_down">Научу читать, писать и говорить простыми предложениями, помогу разобраться в домашних заданиях и подтянуть школьную программу</div>
+                </div>
+                <img src="../static/pictures/ege.png" class="item_s" alt="">
+                <div class="item_s">
+                    <div class="services_text_up">Английский для подготовки к ЕГЭ/ОГЭ</div>
+                    <div class="services_text_down">Расскажу структуру экзамена, подготовлю к аудированию, грамматике, лексике, чтению, письму и говорению.</div>
+                </div>
+            </div>
+            <div class="row_s">
+                <img src="../static/pictures/student.png" class="item_s" alt="">
+                <div class="item_s">
+                    <div class="services_text_up" >Английский для студентов</div>
+                    <div class="services_text_down">Научу всем основам языка, помогу подготовиться к стажировке заграницу, обучению по обмену или просто подтянуть английский.</div>
+                </div>
+                <img src="../static/pictures/adult.png" class="item_s" alt="">
+                <div class="item_s">
+                    <div class="services_text_up">Английский для взрослых</div>
+                    <div class="services_text_down">Помогу освоить английский для работы, путешествий взрослого с любым уровнем знаний.</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div id="comments">
+    <div class="comments_container">
+        <div id="comments_big_text">ОТЗЫВЫ</div>
+        <div class="row_com">
+                <div class="item_com">
+                    <img src="../static/pictures/adult.png" alt="">
+                    <div class="fio_com">Емельховская Наталия</div>
+                    <div class="who_com">ученица МГУ</div>
+                    <div class="comment"> А ты мне опять со своим вот этим, иди суетись дальше,
+                        это твоё распределение, это твой путь и твой горизонт познания и
+                        ощущения твоей природы, он несоизмеримо мелок по сравнению с моим,
+                        понимаешь? Я как будто бы уже давно глубокий старец, бессмертный,
+                        ну или там уже почти бессмертный, который на этой планете от её самого зарождения
+                    </div>
+                </div>
+                <div class="item_com">
+                    <img src="../static/pictures/adult.png" alt="">
+                    <div class="fio_com">Емельховская Наталия</div>
+                    <div class="who_com">ученица МГУ</div>
+                    <div class="comment"> А ты мне опять со своим вот этим, иди суетись дальше,
+                        это твоё распределение, это твой путь и твой горизонт познания и
+                        ощущения твоей природы, он несоизмеримо мелок по сравнению с моим,
+                        понимаешь? Я как будто бы уже давно глубокий старец, бессмертный,
+                        ну или там уже почти бессмертный, который на этой планете от её самого зарождения
+                    </div>
+                </div>
+                <div class="item_com">
+                    <img src="../static/pictures/adult.png" alt="">
+                    <div class="fio_com">Емельховская Наталия</div>
+                    <div class="who_com">ученица МГУ</div>
+                    <div class="comment"> А ты мне опять со своим вот этим, иди суетись дальше,
+                        это твоё распределение, это твой путь и твой горизонт познания и
+                        ощущения твоей природы, он несоизмеримо мелок по сравнению с моим,
+                        понимаешь? Я как будто бы уже давно глубокий старец, бессмертный,
+                        ну или там уже почти бессмертный, который на этой планете от её самого зарождения
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div id="contacts">
+    <div class="contacts_container">
+        <div id="contact_part">
+            <div id="info_con">
+                <div id="contacts_big_text">КОНТАКТЫ</div>
+                <div id="phone_number_con">+79038478248</div>
+                <div id="info_time_con">7 дней в неделю с 9.00 до 21.00</div>
+                <div id="info_place_con">Возможен выезд на дом в пределах г.Нижнего Новгорода, занятия у меня дома и по скайпу</div>
+            </div>
+            <div id="contact_form_con">
+                <input type="text" placeholder="Ваш email или номер телефона" name="email" id="input_con" required>
+                <div id="contact_button_con">
+                    <img src="../static/pictures/b_sign_up.png" id="button_picture_con" alt="">
+                    <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                </div>
+            </div>
+        </div>
+        <img src="../static/pictures/phone_picture.png" id="phone_picture" alt="">
+    </div>
+</div>
+
+
+{%endblock%}
