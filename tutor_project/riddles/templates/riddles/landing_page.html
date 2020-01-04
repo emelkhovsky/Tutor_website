@@ -5,26 +5,26 @@
     <div class="container">
         <div id="menu">
             <div class="items">
-                <div class="item">
+                <a href="#about" class="item">
                     <img src="../static/pictures/b_about.png" id="b_about" alt="">
                     <span>О нас</span>
-                </div>
-                <div class="item">
+                </a>
+                <a href="#conditions" class="item">
                     <img src="../static/pictures/b_conditions.png" id="b_conditions" alt="">
                     <span>Условия обучения</span>
-                </div>
-                <div class="item">
+                </a>
+                <a href="#services" class="item">
                     <img src="../static/pictures/b_services.png" id="b_services" alt="">
                     <span>Услуги</span>
-                </div>
-                <div class="item">
+                </a>
+                <a href="#comments" class="item">
                     <img src="../static/pictures/b_reviews.png" id="b_reviews" alt="">
                     <span>Отзывы</span>
-                </div>
-                <div class="item">
+                </a>
+                <a href="#contacts" class="item">
                     <img src="../static/pictures/b_contacts.png" id="b_contacts" alt="">
                     <span>Контакты</span>
-                </div>
+                </a>
             </div>
         </div>
         <div id="big_text">
@@ -36,10 +36,10 @@
             от 800 руб
         </div>
         <img src="../static/pictures/main_pictures.png" id="main_pictures" alt="">
-        <div id="b_sign_up">
+        <a href="#contacts" id="b_sign_up">
             <img src="../static/pictures/b_sign_up.png" id="button_picture" alt="">
-            <span>ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</span>
-        </div>
+            <div>ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</div>
+        </a>
         <div id="info_text_main">
             <div id="phone_text">+79038478248</div>
             <div id="day_text">7 дней в неделю с 9.00 до 21.00</div>
@@ -160,7 +160,7 @@
                 <img src="../static/pictures/adult.png" class="item_s" alt="">
                 <div class="item_s">
                     <div class="services_text_up">Английский для взрослых</div>
-                    <div class="services_text_down">Помогу освоить английский для работы, путешествий взрослого с любым уровнем знаний.</div>
+                    <div class="services_text_down">Помогу освоить английский для работы, путешествий взрослому с любым уровнем знаний.</div>
                 </div>
             </div>
         </div>
@@ -218,12 +218,19 @@
                 <div id="info_time_con">7 дней в неделю с 9.00 до 21.00</div>
                 <div id="info_place_con">Возможен выезд на дом в пределах г.Нижнего Новгорода, занятия у меня дома и по скайпу</div>
             </div>
-            <div id="contact_form_con">
-                <input type="text" placeholder="Ваш email или номер телефона" name="email" id="input_con" required>
-                <div id="contact_button_con">
+
+            <form id="contact_form_con" action='' method="POST">
+                {%csrf_token%}
+                <div>{{emailform.email}}</div>
+                <button id="contact_button_con">
                     <img src="../static/pictures/b_sign_up.png" id="button_picture_con" alt="">
-                    <span>ОСТАВИТЬ ЗАЯВКУ</span>
-                </div>
+                    <div>ОСТАВИТЬ ЗАЯВКУ</div>
+                </button>
+            </form>
+            <div id="messages">
+                {%for message in messages%}
+                    {{message}}
+                {%endfor%}
             </div>
         </div>
         <img src="../static/pictures/phone_picture.png" id="phone_picture" alt="">

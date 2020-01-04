@@ -48,10 +48,9 @@ html,body{
     width:390px;
     color:white;
 }
-#b_sign_up span{
-    margin-top:11px;
+#b_sign_up div{
+    margin-top:-41px;
     position:absolute;
-    z-index:10;
     font-family:got_bold;
     font-size:18px;
     line-height:30px;
@@ -60,9 +59,9 @@ html,body{
     left:41px;
 }
 #b_sign_up{
-    position:relative;
-    top:430px;
-    left:653px;
+    position:absolute;
+    margin-top:430px;
+    margin-left:653px;
 }
 #info_text_main{
     z-index:10;
@@ -108,6 +107,10 @@ html,body{
     left:290px;
     display:flex;
     justify-content:space-evenly;
+}
+.items a{
+  color: white !important;
+  text-decoration: none
 }
 /*-------------------------------ABOUT----------------------------------------*/
 #about{
@@ -380,7 +383,7 @@ html,body{
 }
 /*-------------------------------CONTACTS-------------------------------------*/
 #contacts{
-    height:470px;
+    height:482px;
     background-color:#4ea19a;
     color:white;
     padding-top:54px;
@@ -436,10 +439,9 @@ html,body{
     margin-top:110px;
     position:absolute;
 }
-#contact_button_con span{
-    margin-top:11px;
+#contact_button_con div{
+    margin-top:-41px;
     position:absolute;
-    z-index:10;
     font-family:got_bold;
     font-size:18px;
     line-height:30px;
@@ -451,6 +453,9 @@ html,body{
     position:absolute;
     margin-top:270px;
     margin-left:32px;
+    border-radius: 25px;
+    padding:0px;
+    outline: none;
 }
 #input_con{
     text-align:center;
@@ -469,6 +474,12 @@ html,body{
     position:absolute;
     margin-top:-110px;
     margin-left:380px;
+}
+#messages{
+    position:absolute;
+    margin-top:345px;
+    font-family:got_light;
+    font-size:16px;
 }
 /*-------------------------------FONTS----------------------------------------*/
 @font-face{
